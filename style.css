@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+html{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tog{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+body{
+    
+    
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.heading{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    width: 250px;
+    align-items: center;
+
+}
+
+.but{
+    width: 150px;
+}
+
+.header{
+    
+    margin-bottom: 20px;
+    font-family: 'Caprasimo', cursive;
+    font-size: 30px;
+    
+   
+}
+
+.container{
+    width: 600px;
+    height: 600px;;
+    border: 2px solid black;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.gridRow{
+   
+    display:flex;
+    margin: 0px;
+    margin: 0;
+    
+    
+}
+
+
+.cell{
+    
+
+    border: 0.2px solid grey;
+    margin: 0px;
+    
+    /*
+    display:flex;
+    
+    min-width: 4px;
+    min-height: 4px;
+    max-width: 20px;
+    max-height: 20px;
+    */
+    
+   
+}
+   
+       
+      
+
+
