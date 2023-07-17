@@ -82,6 +82,7 @@ function makeCells(c){
     cell.forEach((one) => {
         one.style.width = `${z}px`;
         one.style.height = `${z}px`;
+        one.style.backgroundColor = "white";
     }
     )
 
@@ -89,7 +90,12 @@ function makeCells(c){
     cell.forEach((one) => {
         one.addEventListener("mouseover", () =>
         {
-            one.style.backgroundColor="black"; 
+            
+            if (one.style.backgroundColor == "white"){
+                x = randomRgbColor();
+                
+                one.style.backgroundColor=`${x}`; 
+            }
 
         })
     })
@@ -98,10 +104,19 @@ function makeCells(c){
 
 
 
+function randomRgbColor() {
+    let arr = ["red", "blue", "green", "orange", "pink", "purple"]
+    let x = Math.floor(Math.random()*arr.length);
+    
+    return arr[x];
+}
 
 
 
-makeGrid(5, 5);
+
+
+
+makeGrid(16, 16);
 
 
 
